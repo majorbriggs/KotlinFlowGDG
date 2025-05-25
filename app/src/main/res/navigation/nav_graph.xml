@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.kotlinflowsgdg.main.MainFragment"
+        android:label="@string/main_fragment_title"
+        tools:layout="@layout/fragment_main">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SequenceBuggyFragment"
+        android:name="com.example.kotlinflowsgdg.sequence_buggy.SequenceBuggyFragment"
+        android:label="Tasks in sequence (buggy)"
+        tools:layout="@layout/fragment_sequence">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SequenceFlowFragment"
+        android:name="com.example.kotlinflowsgdg.sequence.SequenceFragment"
+        android:label="Tasks in sequence (with Flow)"
+        tools:layout="@layout/fragment_sequence">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SequenceChannelFragment"
+        android:name="com.example.kotlinflowsgdg.sequence_channel.SequenceChannelFragment"
+        android:label="Tasks in sequence (with Channel)"
+        tools:layout="@layout/fragment_sequence">
+    </fragment>
+
+    <fragment
+        android:id="@+id/FlowsFragment"
+        android:name="com.example.kotlinflowsgdg.flows.FlowsFragment"
+        android:label="StateFlow / SharedFlow demo"
+        tools:layout="@layout/fragment_sequence">
+    </fragment>
+</navigation>

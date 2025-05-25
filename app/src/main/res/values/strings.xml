@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KotlinFlowsGDG</string>
+    <string name="main_fragment_title">Kotlin Flows GDG Gdansk</string>
+</resources>
